@@ -1,0 +1,208 @@
+.fiterIcon i{
+    color: white;
+    font-size: 18px;
+}
+.stu-dashboard h3{
+    font-size: 14px !important;
+}
+.stu-dashboard span{
+    font-size: 34px;
+}
+.smsBack{
+    height: 100px;
+    padding: 5px 0;
+}
+.smsBack span , h3 {
+    color: #65a658;
+}
+.addressBack{
+    height: 100px;
+    padding: 5px 0;
+}
+.addressBack span{
+    color: #e19924;
+}
+.addressBack h3 {
+    color: #e19924;
+}
+.statisticsBack{
+    padding: 9px 0;
+}
+.statisticsBack span{
+    color: #f33a2c;
+}
+.statisticsBack h3 {
+    color: #f33a2c;
+}
+.sibBack{
+    height: 100px;
+    padding: 5px 0;
+}
+.sibBack span{
+    color: #4e4e50d4;
+}
+.sibBack h3 {
+    color: #4e4e50d4;
+}
+.parentBack{
+    height: 100px;
+    padding: 5px 0;
+}
+.parentBack span{
+    color: #a4507e;
+}
+.parentBack h3 {
+    color: #a4507e;
+}
+.mobileBack{
+    height: 100px;
+    padding: 5px 0;
+}
+.mobileBack span{
+    color: #f1aa7e;
+}
+.mobileBack h3 {
+    color: #f1aa7e;
+}
+.mobileBack span{
+    font-size: 54px;
+}
+.stuWithdrawal .withHead h3{
+    font-size: 60px !important;
+    color: #1ab395;
+}
+.stuWithdrawal a{
+    font-size: 10px;
+    color: #1c85c7;
+    font-weight: bold;
+}
+.stuWithdrawal a span{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: grey;
+}
+.securityR small{
+    font-size: 18px !important;
+}
+.complaintId span{
+    font-size:60px !important; 
+}
+.attend-minHight{
+    min-height: 333px;
+}
+.fee-minHight{
+    min-height: 320px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.timeline a{
+    font-size: 14px !important;
+}
+.timeLineBox span{
+    padding: 0px 8px;
+    margin-right: 7px;
+}
+.timeLineBox ul li{
+    padding:4px 0; 
+}
+.timeLineBox .green-box{
+    background: #1ab395;
+}
+.timeLineBox .yellow-box{
+    background: #f7ab59;
+}
+.timeLineBox .blue-box{
+    background: #1c85c7;
+}
+
+ul.timeline > li.greenTimeline:before{
+    border: 3px solid #1ab395 !important;
+}
+
+ul.timeline > li.blueTimeline:before{
+    border: 3px solid #f7ab59 !important;
+}
+ul.timeline > li.yellowTimeline:before{
+    border: 3px solid #1c85c7 !important;
+}
+.boxMinhight{
+    min-height: 250px;
+}
+.titleBack{
+    background: #1ab395;
+}
+.titleBack h5{
+    color: white;
+}
+.col_1{
+    border-right: 1px solid #80898f;
+    border-bottom: 1px solid #80898f;
+}
+.col_2{
+    border-right: 1px solid #80898f;
+    border-bottom: 1px solid #80898f;
+}
+.col_3{
+    border-bottom: 1px solid #80898f;
+}
+.col_4{
+    border-right: 1px solid #80898f;
+}
+.col_5{
+    border-right: 1px solid #80898f;
+}
+@media only screen and (max-width:480px){
+    .stu-dashboard h3 {
+        font-size: 11px !important;
+    }
+}
+@media only screen and (max-width:414px){
+    .smsBack {
+        height: 109px;
+    }
+    .addressBack {
+        height: 109px;
+    }
+    .statisticsBack {
+        height: 109px;
+    }
+    .sibBack {
+        height: 109px;
+    }
+    .parentBack {
+        height: 109px;
+    }
+    .mobileBack {
+        height: 109px;
+    }
+}

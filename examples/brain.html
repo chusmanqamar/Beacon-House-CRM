@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Student Care</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/brain.css">
+</head>
+
+<body>
+	<div class="header-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+					<div class="hdr-left mt-2">
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href=""><span><i class="fa fa-home"></i></span></a></li>
+							<li class="list-inline-item">
+								<div class="topnav">
+									<div class="search-container full-screen">
+										<form action="/action_page.php">
+											<input type="text" name="search">
+											<button type="submit"><i class="fa fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-4 mt-2">
+					<div class="text-center site-logo">
+						<h3>Student Care</h3>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+					<div class="text-right header-right mt-3">
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="" class="scnotification">
+									<span><i class="fa fa-bell-o"></i></span>
+									<span class="sotbadge">3</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-scndry mt-3 mb-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="topnav small-screen">
+						<div class="search-container full-screen">
+							<form>
+								<input type="text" name="search">
+								<button type="submit"><i class="fa fa-search"></i></button>
+							</form>
+						</div>
+					</div>
+					<div class="scndry-links">
+						<ul class="list-inline" id="ulCategory">
+							<li class="list-inline-item navActive"><a href='javascript:void(0)'>All <span
+										class="count">100</span></a></li>
+							<li class="list-inline-item"><a href='javascript:void(0)'>Auto Withdrawals <span
+										class="count">50</span></a></li>
+							<li class="list-inline-item"><a href='javascript:void(0)'>Teacher Notified<span
+										class="count">29</span></a></li>
+							<li class="list-inline-item"><a href='javascript:void(0)'>Predicted Withdrawals <span
+										class="count">30</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="kaban">
+		<div id="scroller">
+			<div id="boards">
+				<div class="board" id="board1">
+					<header>
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-8">
+								Withdrawals <span class="count">55</span>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+								<div class="text-right">
+									<span><i class="fa fa-ellipsis-h"></i></span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="cards " id="b1">
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span>
+							<span class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#visitor">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="card-ftr">
+						<button class="add-card-btn btn"><span class="pr-1"><i class="fa fa-plus"></i></span> Add
+							Visitor ...</button>
+					</footer>
+				</div>
+				<div class="board" id="board2">
+					<header>
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-8">
+								Followups <span class="count">50</span>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+								<div class="text-right">
+									<span><i class="fa fa-ellipsis-h"></i></span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="cards" id="b2">
+						<div class="card" data-toggle="modal" data-target="#registrationn">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-toggle="modal" data-target="#registrationn">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="card-ftr">
+						<button class="add-card-btn btn"><span class="pr-1"><i class="fa fa-plus"></i></span> Add
+							Visitor ...</button>
+					</footer>
+				</div>
+				<div class="board" id="board3">
+					<header>
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-8">
+								Winback <span class="count">25</span>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+								<div class="text-right">
+									<span><i class="fa fa-ellipsis-h"></i></span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="cards" id="b3">
+						<div class="card" data-toggle="modal" data-target="#myModal">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="card-ftr">
+						<button class="add-card-btn btn"><span class="pr-1"><i class="fa fa-plus"></i></span> Add
+							Visitor ...</button>
+					</footer>
+				</div>
+				<div class="board" id="board4">
+					<header>
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-8">
+								Withdraw <span class="count">10</span>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+								<div class="text-right">
+									<span><i class="fa fa-ellipsis-h"></i></span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="cards" id="b4">
+						<div class="card" data-toggle="modal" data-target="#myModal">
+							<span class="cardtitle noselect"><b>Student Name:</b> Pre Nur .Blue</span> <span
+								class="cardtitle noselect"><b>Visitor:</b> Ahmed Ali</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="card-cmnt">
+										<span><i class="far fa-comment-alt"></i> 3</span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+									<div class="text-right cardUser">
+										<img src="img/user-img.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="card-ftr">
+						<button class="add-card-btn btn"><span class="pr-1"><i class="fa fa-plus"></i></span> Add
+							Visitor ...</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/dragula.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Custom and plugin javascript -->
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Chosen -->
+	<script src="js/plugins/chosen/chosen.jquery.js"></script>
+	<!-- JSKnob -->
+	<script src="js/plugins/jsKnob/jquery.knob.js"></script>
+	<!-- Input Mask-->
+	<script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+	<!-- Data picker -->
+	<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+	<!-- NouSlider -->
+	<script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
+	<!-- Switchery -->
+	<script src="js/plugins/switchery/switchery.js"></script>
+	<!-- IonRangeSlider -->
+	<script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+	<!-- iCheck -->
+	<script src="js/plugins/iCheck/icheck.min.js"></script>
+	<!-- MENU -->
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<!-- Color picker -->
+	<script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+	<!-- Clock picker -->
+	<script src="js/plugins/clockpicker/clockpicker.js"></script>
+	<!-- Image cropper -->
+	<script src="js/plugins/cropper/cropper.min.js"></script>
+	<!-- Date range use moment.js same as full calendar plugin -->
+	<script src="js/plugins/fullcalendar/moment.min.js"></script>
+	<!-- Date range picker -->
+	<script src="js/plugins/daterangepicker/daterangepicker.js"></script>
+	<!-- Select2 -->
+	<script src="js/plugins/select2/select2.full.min.js"></script>
+	<script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+
+	<script>
+		dragula([
+			document.getElementById('b1'),
+			document.getElementById('b2'),
+			document.getElementById('b3'),
+			document.getElementById('b4'),
+			document.getElementById('b5'),
+			document.getElementById('b6')
+		])
+
+		// Scrollable area
+		var element = document.getElementById("boards"); // Count Boards
+		var numberOfBoards = element.getElementsByClassName('board').length;
+		var boardsWidth = numberOfBoards * 316 // Width of all Boards
+		console.log(boardsWidth);
+		element.style.width = boardsWidth + "px"; // set Width
+
+		// disable text-selection
+		function disableselect(e) { return false; }
+		document.onselectstart = new Function()
+
+	</script>
+
+	<script>
+
+		$(document).ready(function () {
+			var mem = $('#data_1 .input-group.date').datepicker({
+				todayBtn: "linked",
+				keyboardNavigation: false,
+				forceParse: false,
+				calendarWeeks: true,
+				autoclose: true
+			});
+
+			var yearsAgo = new Date();
+			yearsAgo.setFullYear(yearsAgo.getFullYear() - 20);
+			$('#selector').datepicker('setDate', yearsAgo);
+			$('#data_2 .input-group.date').datepicker({
+				startView: 1,
+				todayBtn: "linked",
+				keyboardNavigation: false,
+				forceParse: false,
+				autoclose: true,
+				format: "dd/mm/yyyy"
+			});
+			$('#data_3 .input-group.date').datepicker({
+				startView: 2,
+				todayBtn: "linked",
+				keyboardNavigation: false,
+				forceParse: false,
+				autoclose: true
+			});
+
+			$('#data_4 .input-group.date').datepicker({
+				minViewMode: 1,
+				keyboardNavigation: false,
+				forceParse: false,
+				forceParse: false,
+				autoclose: true,
+				todayHighlight: true
+			});
+
+			$('#data_5 .input-daterange').datepicker({
+				keyboardNavigation: false,
+				forceParse: false,
+				autoclose: true
+			});
+
+			var elem = document.querySelector('.js-switch');
+			var switchery = new Switchery(elem, { color: '#1AB394' });
+			var elem_2 = document.querySelector('.js-switch_2');
+			var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+			var elem_3 = document.querySelector('.js-switch_3');
+			var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
+			var elem_4 = document.querySelector('.js-switch_4');
+			var switchery_4 = new Switchery(elem_4, { color: '#f8ac59' });
+			switchery_4.disable();
+
+			$('.i-checks').iCheck({
+				checkboxClass: 'icheckbox_square-green',
+				radioClass: 'iradio_square-green'
+			});
+
+			$('.clockpicker').clockpicker();
+			$('input[name="daterange"]').daterangepicker();
+			$('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+			$('#reportrange').daterangepicker({
+				format: 'MM/DD/YYYY',
+				startDate: moment().subtract(29, 'days'),
+				endDate: moment(),
+				minDate: '01/01/2012',
+				maxDate: '12/31/2015',
+				dateLimit: { days: 60 },
+				showDropdowns: true,
+				showWeekNumbers: true,
+				timePicker: false,
+				timePickerIncrement: 1,
+				timePicker12Hour: true,
+				ranges: {
+					'Today': [moment(), moment()],
+					'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+					'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+					'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+					'This Month': [moment().startOf('month'), moment().endOf('month')],
+					'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+				},
+				opens: 'right',
+				drops: 'down',
+				buttonClasses: ['btn', 'btn-sm'],
+				applyClass: 'btn-primary',
+				cancelClass: 'btn-default',
+				separator: ' to ',
+				locale: {
+					applyLabel: 'Submit',
+					cancelLabel: 'Cancel',
+					fromLabel: 'From',
+					toLabel: 'To',
+					customRangeLabel: 'Custom',
+					daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+					monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+					firstDay: 1
+				}
+
+			}, function (start, end, label) {
+				console.log(start.toISOString(), end.toISOString(), label);
+				$('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+			});
+			$(".select2_demo_1").select2();
+			$(".select2_demo_2").select2();
+			$(".select2_demo_3").select2({
+				placeholder: "Select a state",
+				allowClear: true
+			});
+		});
+		$('.chosen-select').chosen({ width: "100%" });
+
+	</script>
+	<script>
+		var anchors = $("#ulCategory li a").click(function () {
+			//savesubcat()
+			$(this).addClass("active")
+			anchors.not(this).removeClass("active")
+		})
+	</script>
+	<script>
+		$(document).on('click', '.panel-heading span.clickable', function (e) {
+			var $this = $(this);
+			if (!$this.hasClass('panel-collapsed')) {
+				$this.parents('.panel').find('.panel-body').slideUp();
+				$this.addClass('panel-collapsed');
+				$this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+
+			} else {
+				$this.parents('.panel').find('.panel-body').slideDown();
+				$this.removeClass('panel-collapsed');
+				$this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+			}
+		})
+	</script>
+	<!-- Add Comments -->
+	<script>
+		$(document).ready(function () {
+			//when the Add Field button is clicked
+			$("#add").click(function (e) {
+				//Append a new row of code to the "#items"
+				$("#items").html(
+					'<span class="icon-color"><i class="fa fa-comment"></i></span><h3 class="icon-des">Add comment</h3><form><div id="items"class="form-group mt-3"><textarea class="form-control " rows="3" id="comment"placeholder="write a comment"></textarea></div></form><a href="" class="save">Save</a><br>'
+				);
+			});
+		});
+	</script>
+
+	<!-- Withdrawal Modal here -->
+	<div class="modal inmodal withdrawal_modal" id="visitor" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content animated slideInRight">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span
+							aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">Withdrawals</h4>
+					<p>Ahmed Ali</p>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-10 col-md-9 col-sm-8 col-12">
+							<div class="modal-des">
+								<div class="row">
+									<div class="col-lg-1 pt-2 text-center">
+										<img alt="image" class="rounded-circle img-fluid" src="img/profile_small.jpg">
+									</div>
+									<div class="col-lg-11">
+										<ul class="list-inline empDetail">
+											<li class="list-inline-item"><span class="block m-t-sm font-bold">ID: 25146
+												</span></li>
+											<li class="list-inline-item"><span class="block m-t-sm font-bold">Student
+													Name: Ahmed Ali
+												</span></li>
+											<li class="list-inline-item"><span class="block m-t-sm font-bold">Branch:
+													DHA</span></li>
+											<li class="list-inline-item"><span class="block m-t-sm font-bold">Class:
+													8th</span></li>
+											<li class="list-inline-item"><span class="block m-t-sm font-bold">Section:
+													C</span></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row mt-3">
+									<div class="col-lg-12 ">
+										<h3>Reasons</h3>
+									</div>
+								</div>
+								<div class="row sideBarReasons mt-1">
+									<div class="col-lg-4 col-md-4">
+										<h5>Primary Reason</h5>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<h5>Secondary Reason</h5>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<h5>Detail Lorem Ipsum</h5>
+									</div>
+								</div>
+								<div class="row mt-3">
+									<div class="col-lg-12 ">
+										<h3>Others</h3>
+									</div>
+								</div>
+								<div class="row sideBarReasons mt-1">
+									<div class="col-lg-4 col-md-4">
+										<h5>Next School</h5>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<h5>Remarks</h5>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<h5>WBF Reference</h5>
+									</div>
+								</div>
+								<div class="row mt-3 mb-3">
+									<div class="col-lg-12">
+										<h3>Members</h3>
+										<ul class="list-inline membersAdd mt-2">
+											<li class="list-inline-item"><a href=""><img alt="image"
+														class="rounded-circle img-fluid" src="img/profile_small.jpg"
+														width="37px"></a></li>
+											<li class="list-inline-item"><a href=""><img alt="image"
+														class="rounded-circle img-fluid" src="img/profile_small.jpg"
+														width="37px"></a></li>
+											<li class="list-inline-item"><a href=""><img alt="image"
+														class="rounded-circle img-fluid" src="img/profile_small.jpg"
+														width="37px"></a></li>
+											<li class="list-inline-item"><a href=""><img alt="image"
+														class="rounded-circle img-fluid" src="img/profile_small.jpg"
+														width="37px"></a></li>
+											<li><a href=""><span><i class="fa fa-plus"></i></span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="mt-2">
+									<!-- <span class="icon-color"><i class="fa fa-comment"></i></span>
+									<h3 class="icon-des">Add comment</h3> -->
+									<form>
+										<div id="items" class="form-group mt-3">
+											<!-- <textarea class="form-control " rows="3" id="comment"
+												placeholder="write a comment"></textarea> -->
+										</div>
+									</form>
+									<!-- <a href="" class="save">Save</a> -->
+								</div>
+
+								<div class="mt-2">
+									<span class="icon-color"><i class="fa fa-bars"></i></span>
+									<h3 class="icon-des">Description</h3>
+									<form>
+										<div class="form-group mt-3">
+											<textarea class="form-control textarea-1 " rows="3" id="comment"
+												placeholder="Add a more detailed description"></textarea>
+										</div>
+									</form>
+								</div>
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="mt-4">
+											<span class="icon-color"><i class="fa fa-align-left"></i></span>
+											<h3 class="icon-des">Activity</h3>
+										</div>
+									</div>
+									<div class="col-lg-4 mt-4">
+										<div class="text-right show-detail">
+											<a href="">Show Details</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4">
+							<div class="sidebar">
+
+								<p class="mt-3">Add to card</p>
+								<ul class="list-unstyled side-list">
+									<li><a href="" data-toggle="modal" data-target="#members"><span><i
+													class="fa fa-user"></i></span> Members</a> </li>
+									<li><a href="" data-toggle="modal" data-target="#labels"><span><i
+													class="fa fa-tag"></i></span> Labels</a> </li>
+									<li><a href="" data-toggle="modal" data-target="#attachment"><span><i
+													class="fa fa-link"></i></span>Attachments</a> </li>
+									<li><a href="javascript:void(0)" onclick="disable(1)" id="add"><span><i
+													class="fa fa-comments"></i></span> Comments</a> </li>
+									<li><a href="" data-toggle="modal" data-target="#share"><span><i
+													class="fa fa-share-alt"></i></span> Share</a> </li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Followupr Model Here -->
+	<div class="modal inmodal followups_modal" id="registrationn" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content animated slideInRight">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span
+							aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">Registration Information</h4>
+					<p>Ahmed Ali</p>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-10 col-md-9 col-sm-8 col-12 scroll">
+							<div class="row mt-2">
+								<div class="col-lg-4 col-md-6">
+									<div class="form-group  row"><label
+											class="col-lg-4 col-md-4 col-sm-4 col-form-label">Registered</label>
+										<div class="col-lg-8 col-md-8 col-sm-8"><input type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-4 col-md-6">
+									<div class="form-group  row"><label
+											class="col-lg-4 col-md-4 col-sm-4 col-form-label">Registered
+											ID</label>
+										<div class="col-lg-8 col-md-8 col-sm-8"><input type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<button type="button" class="btn btn-w-m btn-success">Update</button>
+								</div>
+
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>First Name</label> <input type="email" placeholder="First Name"
+											class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Middle Name</label> <input type="email" placeholder="Middle Name"
+											class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Last Name</label> <input type="email" placeholder="Last Name"
+											class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Birth Place</label> <input type="email" placeholder="Birth Place"
+											class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group" id="data_1">
+										<label class="font-normal">DOB</label>
+										<div class="input-group date">
+											<span class="input-group-addon"><i class="fa fa-calendar"></i></span><input
+												type="text" class="form-control" value="03/04/2014">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Religion</label>
+										<select class="form-control m-b" name="account">
+											<option>Select Relegion</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Nationality</label>
+										<select class="form-control m-b" name="account">
+											<option>Select Nationality</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Passport #</label> <input type="email" placeholder="Passport"
+											class="form-control">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="form-group">
+										<label>Display Name</label> <input type="email" placeholder="Display Name"
+											class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+									<div class="form-group row"><label class="col-sm-2 col-form-label">Gender<br />
+										</label>
+										<div class="col-sm-4 col-md-4 col-sm-12 mt-2">
+											<div><label> <input type="radio" checked="" value="option1"
+														id="optionsRadios1" name="optionsRadios"
+														class="mr-1">Male</label></div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 mt-2">
+											<div><label> <input type="radio" value="option2" id="optionsRadios2"
+														name="optionsRadios" class="mr-1">Female</label></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<div class="form-group row mt-2">
+										<div class="col-sm-12 mt-2">
+											<div class="i-checks"><input type="checkbox" value=""
+													class="mr-1"><label>Early Sitters</label> </div>
+											<!-- <label class="col-sm-12 col-form-label"><br/></label>-->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col-lg-12">
+									<hr>
+								</div>
+							</div>
+							<div class="tabs-container">
+								<ul class="nav nav-tabs" role="tablist">
+									<li><a class="nav-link active" data-toggle="tab" href="#registertab-1">Admission</a>
+									</li>
+									<li><a class="nav-link" data-toggle="tab" href="#registertab-2">Correspondence
+											Address</a></li>
+									<li><a class="nav-link" data-toggle="tab" href="#registertab-3">Miscellaneous
+											Information</a></li>
+									<li><a class="nav-link" data-toggle="tab" href="#registertab-4">Parent
+											Information</a></li>
+								</ul>
+								<div class="tab-content">
+									<div role="tabpanel" id="registertab-1" class="tab-pane active">
+										<div class="panel-body register">
+											<form role="form">
+												<div class="row mt-1">
+													<div class="col-lg-4 col-md-4 col-sm-12">
+														<div class="form-group">
+															<label>Branch</label>
+															<select class="form-control m-b" name="account">
+																<option>Select Branch</option>
+																<option>option 2</option>
+																<option>option 3</option>
+																<option>option 4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-4 col-md-4 col-sm-12">
+														<div class="form-group">
+															<label>Class</label>
+															<select class="form-control m-b" name="account">
+																<option>Select Class</option>
+																<option>option 2</option>
+																<option>option 3</option>
+																<option>option 4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-4 col-md-4 col-sm-12">
+														<div class="form-group">
+															<label>Section</label>
+															<select class="form-control m-b" name="account"
+																placeholder="Selct">
+																<option>Select Section</option>
+																<option>option 2</option>
+																<option>option 3</option>
+																<option>option 4</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="row mb-2">
+													<div class="col-md-4 col-md-4 col-sm-12">
+														<div class="form-group" id="data_2">
+															<label class="font-normal">DOB</label>
+															<div class="input-group date">
+																<span class="input-group-addon"><i
+																		class="fa fa-calendar"></i></span><input
+																	type="text" class="form-control" value="03/04/2014">
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 col-md-4 col-sm-12">
+														<div class="form-group">
+															<label class="font-normal">Academic Year</label>
+															<div class="input-group date">
+																<span class="input-group-addon"><i
+																		class="fa fa-calendar"></i></span><input
+																	type="text" class="form-control" value="03/04/2014">
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-12">
+														<label class="font-normal">Admission W.E.F</label>
+														<div class="input-group date">
+															<span class="input-group-addon"><i
+																	class="fa fa-calendar"></i></span><input type="text"
+																class="form-control" value="03/04/2014">
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-2 col-md-4 col-sm-12">
+														<label class="font-normal">Date</label>
+														<div class="input-group date">
+															<span class="input-group-addon"><i
+																	class="fa fa-calendar"></i></span><input type="text"
+																class="form-control" value="03/04/2014">
+														</div>
+													</div>
+													<div class="col-lg-2 col-md-4 col-sm-12">
+														<div class="form-group">
+															<label>Time</label>
+															<select class="form-control m-b" name="account"
+																placeholder="Selct">
+																<option>Select Time</option>
+																<option>option 2</option>
+																<option>option 3</option>
+																<option>option 4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-12">
+														<div class="form-group">
+															<label>Siblings</label>
+															<select class="form-control m-b" name="account"
+																placeholder="Selct">
+																<option>No Siblings</option>
+																<option>option 2</option>
+																<option>option 3</option>
+																<option>option 4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-2 col-md-4 col-sm-12">
+														<div class="form-group row mt-3"><label
+																class="col-sm-8 col-6 col-form-label">Email
+																List<br /></label>
+															<div class="col-sm-4 col-6 mt-2">
+																<div class="i-checks"><label> <input type="checkbox"
+																			value=""> <i></i> </label></div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-2 col-md-4">
+														<div class="form-group row mt-3"><label
+																class="col-sm-8 col-6 col-form-label">Monthly
+																Billing<br /></label>
+															<div class="col-sm-4 col-6 mt-2">
+																<div class="i-checks"><label> <input type="checkbox"
+																			value=""> <i></i> </label></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+														<div class="ibox">
+															<div class="ibox-title">
+																<h5>Previous School</h5>
+																<div class="ibox-tools">
+																	<a class="collapse-link">
+																		<i class="fa fa-chevron-up"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="ibox-content">
+																<div class="row">
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="text-center">
+																			<label>Name</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="text-center">
+																			<label>Location</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="text-center">
+																			<label>From</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="text-center">
+																			<label>To</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="text-center">
+																			<label>Upto Class</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="text-center">
+																			<label>Leaving Reason</label>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+																		<div class="form-group">
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-12">
+														<div class="ibox">
+															<div class="ibox-title">
+																<h5>Registration</h5>
+																<div class="ibox-tools">
+																	<a class="collapse-link">
+																		<i class="fa fa-chevron-up"></i>
+																	</a>
+																</div>
+															</div>
+															<div class="ibox-content">
+																<div class="row">
+																	<div class="col-lg-4 col-md-4 col-sm-12">
+																		<div class="form-group">
+																			<label>Reasons</label>
+																			<select class="form-control m-b"
+																				name="account" placeholder="Selct">
+																				<option>Select an option</option>
+																				<option>option 2</option>
+																				<option>option 3</option>
+																				<option>option 4</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-lg-4 col-md-4 col-sm-12">
+																		<div class="form-group">
+																			<label>Account</label>
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																	<div class="col-lg-4 col-md-4 col-sm-12">
+																		<label class="font-normal">Date</label>
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-4 col-md-4 col-sm-12">
+																		<div class="form-group">
+																			<label>Receipt #</label>
+																			<input type="email" placeholder=""
+																				class="form-control">
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-lg-4 col-md-4 col-sm-12">
+																		<div class="form-group">
+																			<label>Bank</label>
+																			<select class="form-control m-b"
+																				name="account" placeholder="Selct">
+																				<option>Select an Bank</option>
+																				<option>option 2</option>
+																				<option>option 3</option>
+																				<option>option 4</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="col-lg-4 col-md-4 col-sm-12">
+																		<label class="font-normal">Deposit Date</label>
+																		<div class="input-group date">
+																			<span class="input-group-addon"><i
+																					class="fa fa-calendar"></i></span><input
+																				type="text" class="form-control"
+																				value="03/04/2014">
+																		</div>
+																	</div>
+																	<div class="col-lg-4 col-md-4 col-sm-12 print-btn">
+																		<button type="button"
+																			class="btn btn-w-m btn-success">Print</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div role="tabpanel" id="registertab-2" class="tab-pane">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="ibox">
+														<div class="ibox-title">
+															<h5>Residence</h5>
+															<div class="ibox-tools">
+																<a class="collapse-link">
+																	<i class="fa fa-chevron-up"></i>
+																</a>
+															</div>
+														</div>
+														<div class="ibox-content">
+															<div class="row">
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Country</label>
+																		<select class="form-control m-b" name="account"
+																			placeholder="Selct">
+																			<option>Select an Country</option>
+																			<option>option 2</option>
+																			<option>option 3</option>
+																			<option>option 4</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>City</label>
+																		<select class="form-control m-b" name="account"
+																			placeholder="Selct">
+																			<option>Select an City</option>
+																			<option>option 2</option>
+																			<option>option 3</option>
+																			<option>option 4</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Postal Code</label>
+																		<input type="email" placeholder="Postal Code"
+																			class="form-control">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Phone</label>
+																		<input type="email" placeholder="Phone"
+																			class="form-control">
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Mobile</label>
+																		<input type="email" placeholder="Mobile"
+																			class="form-control">
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Student's Email</label>
+																		<input type="email"
+																			placeholder="Student's Email"
+																			class="form-control">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-8 col-md-8 col-sm-12">
+																	<div class="form-group">
+																		<label for="comment">Address</label>
+																		<textarea class="form-control" rows="2"
+																			id="comment"></textarea>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>SMS Number</label>
+																		<input type="email" placeholder="SMS Number"
+																			class="form-control">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="ibox">
+														<div class="ibox-title">
+															<h5>Permanent</h5>
+															<div class="ibox-tools">
+																<a class="collapse-link">
+																	<i class="fa fa-chevron-up"></i>
+																</a>
+															</div>
+														</div>
+														<div class="ibox-content">
+															<div class="row">
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group row mt-3"><label
+																			class="col-sm-8 col-form-label">Same as
+																			Above<br /></label>
+																		<div class="col-sm-4 mt-2">
+																			<div class="i-checks"><label> <input
+																						type="checkbox" value="">
+																					<i></i> </label></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Country</label>
+																		<select class="form-control m-b" name="account"
+																			placeholder="Selct">
+																			<option>Select an Country</option>
+																			<option>option 2</option>
+																			<option>option 3</option>
+																			<option>option 4</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>City</label>
+																		<select class="form-control m-b" name="account"
+																			placeholder="Selct">
+																			<option>Select an City</option>
+																			<option>option 2</option>
+																			<option>option 3</option>
+																			<option>option 4</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Postal Code</label>
+																		<input type="email" placeholder="Postal Code"
+																			class="form-control">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Mobile</label>
+																		<input type="email" placeholder="Mobile"
+																			class="form-control">
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-8 col-sm-12">
+																	<div class="form-group">
+																		<label for="comment">Address</label>
+																		<textarea class="form-control" rows="2"
+																			id="comment"></textarea>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="ibox">
+														<div class="ibox-title">
+															<h5>Emergency</h5>
+															<div class="ibox-tools">
+																<a class="collapse-link">
+																	<i class="fa fa-chevron-up"></i>
+																</a>
+															</div>
+														</div>
+														<div class="ibox-content">
+															<div class="row">
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Relation</label>
+																		<select class="form-control m-b" name="account"
+																			placeholder="Selct">
+																			<option>Father</option>
+																			<option>option 2</option>
+																			<option>option 3</option>
+																			<option>option 4</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Contact Person</label>
+																		<input type="email" placeholder="Contact Person"
+																			class="form-control">
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-4 col-sm-12">
+																	<div class="form-group">
+																		<label>Phone</label>
+																		<input type="email" placeholder="Contact Person"
+																			class="form-control">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" id="registertab-3" class="tab-pane">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="form-group  row"><label
+															class="col-sm-5 col-form-label">Any serious illness or
+															allergies?</label>
+														<div class="col-sm-7"><input type="text" class="form-control">
+														</div>
+
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group  row"><label
+															class="col-sm-5 col-form-label">Any Physical
+															impairment?</label>
+														<div class="col-sm-7"><input type="text" class="form-control">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="form-group  row"><label
+															class="col-sm-5 col-form-label">Does the child have some
+															special educational needs</label>
+														<div class="col-sm-7"><input type="text" class="form-control">
+														</div>
+
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group  row"><label
+															class="col-sm-5 col-form-label">Meritral status of
+															parents</label>
+														<div class="col-sm-7"><input type="text" class="form-control">
+														</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="form-group row"><label
+															class="col-sm-5 col-form-label">Who has the legal custody of
+															the child<br />
+														</label>
+														<div class="col-sm-1 mt-2">
+															<div><label> <input type="radio" checked="" value="option1"
+																		id="optionsRadios1"
+																		name="optionsRadios">Parents</label></div>
+														</div>
+														<div class="col-lg-1 mt-2">
+															<div><label> <input type="radio" value="option2"
+																		id="optionsRadios2"
+																		name="optionsRadios">Mother</label></div>
+														</div>
+														<div class="col-lg-1 mt-2">
+															<div><label> <input type="radio" value="option2"
+																		id="optionsRadios2"
+																		name="optionsRadios">Father</label></div>
+														</div>
+														<div class="col-lg-2 mt-2">
+															<div>
+																<label>
+																	<input type="radio" value="option2"
+																		id="optionsRadios2" name="optionsRadios">
+																	Guardian
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" id="registertab-4" class="tab-pane">
+										<div class="panel-body">
+											<div class="col-lg-12">
+												<div class="ibox">
+													<div class="ibox-title">
+														<h5>Father</h5>
+														<div class="ibox-tools">
+															<a class="collapse-link">
+																<i class="fa fa-chevron-up"></i>
+															</a>
+														</div>
+													</div>
+													<div class="ibox-content">
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>CNIC #</label>
+																	<input type="email" placeholder="12345-1234567-1"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Passport</label>
+																	<input type="email" placeholder="Passport"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>SSN #</label>
+																	<input type="email" placeholder="SSN #"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Link Number</label>
+																	<input type="email" placeholder="Link Number"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>First Name</label>
+																	<input type="email" placeholder="First Name"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Last Name</label>
+																	<input type="email" placeholder="Last Name"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Organisation</label>
+																	<input type="email" placeholder="Organisation"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Occupation</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Private Job</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Designation</label>
+																	<input type="email" placeholder="Designation"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Email</label>
+																	<input type="email" placeholder="Email"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Phone #</label>
+																	<input type="email" placeholder="Phone"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Mobile #</label>
+																	<input type="email" placeholder="Mobile"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Postal Code</label>
+																	<input type="email" placeholder="Postal Code"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Country</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Select Country</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>City</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Select City</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label for="comment">Address</label>
+																	<textarea class="form-control" rows="3"
+																		id="comment"></textarea>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Country</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Private Country</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>City</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Select City</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="ibox">
+													<div class="ibox-title">
+														<h5>Mother</h5>
+														<div class="ibox-tools">
+															<a class="collapse-link">
+																<i class="fa fa-chevron-up"></i>
+															</a>
+														</div>
+													</div>
+													<div class="ibox-content">
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group row mt-3"><label
+																		class="col-sm-8 col-form-label">Same as
+																		Above<br /></label>
+																	<div class="col-sm-4 mt-2">
+																		<div class="i-checks"><label> <input
+																					type="checkbox" value=""> <i></i>
+																			</label></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>CNIC #</label>
+																	<input type="email" placeholder="12345-1234567-1"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Passport</label>
+																	<input type="email" placeholder="Passport"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>SSN #</label>
+																	<input type="email" placeholder="SSN #"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Link Number</label>
+																	<input type="email" placeholder="Link Number"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>First Name</label>
+																	<input type="email" placeholder="First Name"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Last Name</label>
+																	<input type="email" placeholder="Last Name"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Organisation</label>
+																	<input type="email" placeholder="Organisation"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Occupation</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Private Job</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Designation</label>
+																	<input type="email" placeholder="Designation"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Email</label>
+																	<input type="email" placeholder="Email"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Phone #</label>
+																	<input type="email" placeholder="Phone"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Mobile #</label>
+																	<input type="email" placeholder="Mobile"
+																		class="form-control">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Postal Code</label>
+																	<input type="email" placeholder="Postal Code"
+																		class="form-control">
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Country</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Select Country</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>City</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Select City</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label for="comment">Address</label>
+																	<textarea class="form-control" rows="3"
+																		id="comment"></textarea>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>Country</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Private Country</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-12">
+																<div class="form-group">
+																	<label>City</label>
+																	<select class="form-control m-b" name="account"
+																		placeholder="Selct">
+																		<option>Select City</option>
+																		<option>option 2</option>
+																		<option>option 3</option>
+																		<option>option 4</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4">
+							<div class="sidebar">
+								<p>Add to card</p>
+								<ul class="list-unstyled side-list">
+									<li><a href="" data-toggle="modal" data-target="#members"><span><i
+													class="fa fa-user"></i></span> Members</a> </li>
+									<li><a href="" data-toggle="modal" data-target="#labels"><span><i
+													class="fa fa-tag"></i></span> Labels</a> </li>
+									<li><a href=""><span><i class="fa fa-check-square"></i></span> Checklist</a> </li>
+									<!-- <li><span><i class="far fa-clock"></i></span><a href="">Due Date</a> </li> -->
+									<!-- <li><span><i class="fas fa-paperclip"></i></span><a href="">Attachment</a> </li> -->
+								</ul>
+
+							</div>
+							<div class="sidebar mt-3">
+								<p>actions</p>
+								<ul class="list-unstyled side-list">
+									<li><a href=""><span><i class="fa fa-arrow-right"></i></span> Move</a> </li>
+									<li><a href=""><span><i class="fa fa-comments"></i></span> Comments</a> </li>
+									<li><a href=""><span><i class="fa fa-paste"></i></span> Copy</a> </li>
+									<!-- <li><span><i class="far fa-eye"></i></span><a href="">Watch</a> </li> -->
+									<li><a href=""><span><i class="fa fa-file-archive-o"></i></span> Archive</a> </li>
+									<li><a href=""><span><i class="fa fa-share-alt"></i></span> Share</a> </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Members Modal here -->
+	<div class="modal inmodal" id="members" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content animated bounce">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span
+							aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h3>Members</h3>
+				</div>
+				<div class="modal-body memberPopup">
+					<div class="form-group">
+						<label>Search members</label>
+						<input type="text" placeholder="Search members" class="form-control">
+					</div>
+					<ul class="list-unstyled">
+						<li><a href=""><img alt="image" class="rounded-circle img-fluid"
+									src="img/profile_small.jpg"><span class="pl-2">abc@gmail.com</span></a></li>
+					</ul>
+				</div>
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<!-- Labels Modal here -->
+	<div class="modal inmodal" id="labels" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content animated bounce">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span
+							aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h3>Labels</h3>
+				</div>
+				<div class="modal-body labelsPopup">
+					<div class="form-group">
+						<!-- <label>Search members</label>  -->
+						<input type="text" placeholder="Search Labels" class="form-control">
+					</div>
+					<ul class="list-unstyled labelColors">
+						<li><a href="" class="labelEdit"><i class="fa fa-edit"></i></a><a href=""
+								class="labelColorGreen"></a></li>
+						<li><a href="" class="labelEdit"><i class="fa fa-edit"></i></a><a href=""
+								class="labelColorYellow"></a></li>
+						<li><a href="" class="labelEdit"><i class="fa fa-edit"></i></a><a href=""
+								class="labelColorOrange"></a></li>
+						<li><a href="" class="labelEdit"><i class="fa fa-edit"></i></a><a href=""
+								class="labelColorRed"></a></li>
+						<li><a href="" class="labelEdit"><i class="fa fa-edit"></i></a><a href=""
+								class="labelColorPurple"></a></li>
+						<li><a href="" class="labelEdit"><i class="fa fa-edit"></i></a><a href=""
+								class="labelColorBlue"></a></li>
+					</ul>
+					<ul class="list-unstyled newLabel">
+						<li><a href="">Create New Label</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Attachments Modal here -->
+	<div class="modal inmodal" id="attachment" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content animated bounce">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span
+							aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h3>Add Checklist</h3>
+				</div>
+				<div class="modal-body attachmentPopup">
+					<ul class="list-unstyled">
+						<li><a href="">Computer</a></li>
+						<li><a href="">Google Drive</a></li>
+						<li><a href="">Drop Box</a></li>
+						<li><a href="">Box</a></li>
+						<li><a href="">One Drive</a></li>
+					</ul>
+
+					<div class="form-group">
+						<div class="form-group">
+							<label>Attach a Link</label>
+							<input type="text" placeholder="Paste your link here" class="form-control">
+						</div>
+						<a href="">Attach</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Share Modal here -->
+	<div class="modal inmodal" id="share" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content animated bounce">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span
+							aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h3>Share and More</h3>
+				</div>
+				<div class="modal-body sharePopup">
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-google"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

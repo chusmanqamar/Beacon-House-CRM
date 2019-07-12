@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cahrts</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/dashboard_charts.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+
+            <div class="sidebar-collapse">
+
+                <ul class="nav metismenu" id="side-menu">
+
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element">
+
+                            <img alt="image" class="rounded-circle" src="img/profile_small.jpg" />
+
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                                <span class="block m-t-xs font-bold">David Williams</span>
+
+                                <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+
+                            </a>
+
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+
+                                <li class="dropdown-divider"></li>
+
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="logo-element">
+
+                            IN+
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <a href="dashboard_charts.html"><i class="fa fa-magic"></i> <span class="nav-label">Dashboards
+                            </span><span class="label label-info float-right">62</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations
+                            </span><span class="label label-info float-right">62</span></a>
+
+                    </li>
+
+                    <li>
+                        <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations
+                            </span><span class="label label-info float-right">62</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            Filters <i class="fa fa-arrow-right"></i>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="wrapper wrapper-content">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+                                <h5>YTD Admission</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="gauge_chart" style="max-width: 310px; height: 300px; margin: 0 auto"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Current Bill Cycle</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+                                <div id="line_chart" style="max-width: 310px; height: 300px; margin: 0 auto"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Student Absent Count</h5>
+
+                            </div>
+
+                            <div class="ibox-content" style="height: 305px;">
+                                <div class="ibox-content table-responsive">
+
+                                    <table class="table table-hover no-margins">
+
+                                        <thead>
+
+                                            <tr>
+
+                                                <th>#age of Days</th>
+
+                                                <th>Count</th>
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody>
+
+                                            <tr>
+
+                                                <td>3 Days</td>
+
+                                                <td><span class="label label-warning">25</span></td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>5 Days </td>
+
+                                                <td><span class="label label-warning">50</span></td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>10 Days </td>
+
+                                                <td><span class="label label-warning">150</span></td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>30 Days </td>
+
+                                                <td><span class="label label-warning">170</span></td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>40 Days </td>
+
+                                                <td><span class="label label-warning">170</span></td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>60 Days </td>
+
+                                                <td><span class="label label-warning">170</span></td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Current Bill Cycle</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="pie_chart" style="max-width: 310px; height: 300px; margin: 0 auto;"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Withdrawals - MOM</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="annotations_chart" style="max-width: 310px; height: 300px;"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Withdrawals Limit VS Incurred</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="line_chart2"
+                                    style="max-width: 310px; max-width: 310px; height: 300px; margin: 0 auto"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Resigned VS Back Fill</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="column_chart" style="max-width: 310px; height: 300px; margin: 0 auto"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Blues VS Red Challans</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="column_chart2"
+                                    style="max-width: 310px; max-width: 310px; height: 300px; margin: 0 auto"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>BSS ALevel Conversion</h5>
+
+                            </div>
+
+                            <div class="ibox-content" style="height: 305px; margin: 0 auto">
+                                <div id="circle_chart"> </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Net Strength Target VS Achievment</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="line_chart3" style="max-width: 310px; height: 300px; margin: 0 auto"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Walkins VS Paid</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+
+                                <div id="column_chart3"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="ibox ">
+
+                            <div class="ibox-title">
+
+                                <h5>Auto Withdrawals VS Recovered</h5>
+
+                            </div>
+
+                            <div class="ibox-content">
+                                <div id="pie_chart2" style="max-width: 310px; height: 310px; margin: 0 auto;"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="footer">
+
+                <div class="float-right">
+
+                    10GB of <strong>250GB</strong> Free.
+
+                </div>
+
+                <div>
+
+                    <strong>Copyright</strong> Example Company &copy; 2014-2018
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+                <div id="app" class="checkbox-select">
+                    <div class="checkbox-select__trigger" :class="{ isActive: activeTrigger }" @click="showDropdown">
+                        <span class="checkbox-select__title">CSO</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+                            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" />
+                        </svg>
+                    </div>
+                    <div id="dropdown" class="checkbox-select__dropdown" :class="{ activeSearch: showLoader }">
+                        <div class="checkbox-select__search-wrapp">
+                            <input type="text" @focus="showLoader = true" @blur="showLoader = false"
+                                placeholder="search filters..." v-model="search">
+                        </div>
+                        <div class="checkbox-select__col">
+                            <div class="checkbox-select__select-all" v-model="selectAll"><label
+                                    for="selectAll">{{selectAllText}}</label>
+                                <input type="checkbox" id="selectAll" @click="selectAll" v-model="allSelected"></div>
+                            <div class="checkbox-select__info">{{checkedFilters.length}} SELECTED</div>
+                        </div>
+                        <ul id="customScroll" class="checkbox-select__filters-wrapp" data-simplebar-auto-hide="false">
+                            <li v-for="(filter, index) in filteredList">
+                                <div class="checkbox-select__check-wrapp">
+                                    <input :id="index" class="conditions-check" v-model="checkedFilters" :value="filter"
+                                        type="checkbox">
+                                    <label :for="index">{{filter}}</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="app2" class="checkbox-select">
+                    <div class="checkbox-select__trigger" :class="{ isActive: activeTrigger }" @click="showDropdown">
+                        <span class="checkbox-select__title">Cluster</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+                            <path
+                                d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" />
+                        </svg>
+                    </div>
+                    <div id="dropdown2" class="checkbox-select__dropdown" :class="{ activeSearch: showLoader }">
+                        <div class="checkbox-select__search-wrapp">
+                            <input type="text" @focus="showLoader = true" @blur="showLoader = false"
+                                placeholder="search filters..." v-model="search">
+                        </div>
+                        <div class="checkbox-select__col">
+                            <div class="checkbox-select__select-all" v-model="selectAll"><label
+                                    for="selectAll">{{selectAllText}}</label>
+                                <input type="checkbox" id="selectAll" @click="selectAll" v-model="allSelected"></div>
+                            <div class="checkbox-select__info">{{checkedFilters.length}} SELECTED</div>
+                        </div>
+                        <ul id="customScroll2" class="checkbox-select__filters-wrapp" data-simplebar-auto-hide="false">
+                            <li v-for="(filter, index) in filteredList">
+                                <div class="checkbox-select__check-wrapp">
+                                    <input :id="index" class="conditions-check" v-model="checkedFilters" :value="filter"
+                                        type="checkbox">
+                                    <label :for="index">{{filter}}</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="app3" class="checkbox-select">
+                    <div class="checkbox-select__trigger" :class="{ isActive: activeTrigger }" @click="showDropdown">
+                        <span class="checkbox-select__title">School</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+                            <path
+                                d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" />
+                        </svg>
+                    </div>
+                    <div id="dropdown3" class="checkbox-select__dropdown" :class="{ activeSearch: showLoader }">
+                        <div class="checkbox-select__search-wrapp">
+                            <input type="text" @focus="showLoader = true" @blur="showLoader = false"
+                                placeholder="search filters..." v-model="search">
+                        </div>
+                        <div class="checkbox-select__col">
+                            <div class="checkbox-select__select-all" v-model="selectAll"><label
+                                    for="selectAll">{{selectAllText}}</label>
+                                <input type="checkbox" id="selectAll" @click="selectAll" v-model="allSelected"></div>
+                            <div class="checkbox-select__info">{{checkedFilters.length}} SELECTED</div>
+                        </div>
+                        <ul id="customScroll3" class="checkbox-select__filters-wrapp" data-simplebar-auto-hide="false">
+                            <li v-for="(filter, index) in filteredList">
+                                <div class="checkbox-select__check-wrapp">
+                                    <input :id="index" class="conditions-check" v-model="checkedFilters" :value="filter"
+                                        type="checkbox">
+                                    <label :for="index">{{filter}}</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-12 pl-5 pt-3">
+                        <div class="i-checks"><label> <input type="checkbox" value=""> <i></i> 2019 </label></div>
+                        <div class="i-checks"><label> <input type="checkbox" value=""> <i></i> 2018 </label></div>
+                        <div class="i-checks"><label> <input type="checkbox" value=""> <i></i> 2017 </label></div>
+                        <div class="i-checks"><label> <input type="checkbox" value=""> <i></i> 2016 </label></div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-w-m btn-success">Apply</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Hight Charts -->
+    <script src="../../highcharts7.0.3/code/highcharts.js"></script>
+    <script src="../../highcharts7.0.3/code/highcharts-more.js"></script>
+    <script src="../../highcharts7.0.3/code/modules/exporting.js"></script>
+    <script src="../../highcharts7.0.3/code/modules/export-data.js"></script>
+    <!-- Apex Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+
+    <!-- Guage Chart -->
+    <script type="text/javascript">
+
+        Highcharts.chart('gauge_chart', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,
+                plotShadow: false
+            },
+            title: {
+                text: 'Browser<br>shares<br>2017',
+                align: 'center',
+                verticalAlign: 'middle',
+                y: 40
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    dataLabels: {
+                        enabled: true,
+                        distance: -50,
+                        style: {
+                            fontWeight: 'bold',
+                            color: 'white'
+                        }
+                    },
+                    startAngle: -90,
+                    endAngle: 90,
+                    center: ['50%', '75%'],
+                    size: '110%'
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                innerSize: '50%',
+                data: [
+                    ['Edge', 3.78],
+                    ['Safari', 3.42],
+                    {
+                        name: 'Other',
+                        y: 7.61,
+                        dataLabels: {
+                            enabled: false
+                        }
+                    }
+                ]
+            }]
+        });
+
+
+    </script>
+
+    <!-- Line Chart -->
+    <script type="text/javascript">
+
+        Highcharts.chart('line_chart', {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: 'Source: WorldClimate.com'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature (°C)'
+                }
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: 'Tokyo',
+                data: [7.0, 6.9, 18.4, 21.5, 6.9, 5.6]
+            }, {
+                name: 'London',
+                data: [5.0, 5.9, 15.4, 18.5, 4.9, 3.6]
+            }]
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        Highcharts.chart('pie_chart', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45,
+                    beta: 0
+                }
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    depth: 35,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                    ['IE', 26.8],
+                    {
+                        name: 'Chrome',
+                        y: 12.8,
+                        sliced: true,
+                        selected: true
+                    }
+
+                ]
+            }]
+        });
+    </script>
+    <!-- Pie Chart -->
+    <script type="text/javascript">
+        var elevationData = [
+            [0.0, 225],
+            [0.1, 226],
+            [0.2, 228],
+            [0.3, 228],
+            [0.4, 229],
+            [0.5, 229],
+            [0.6, 230],
+            [0.7, 234],
+            [0.8, 235],
+            [0.9, 236],
+            [1.0, 235],
+            [1.1, 232],
+            [1.2, 228],
+            [1.3, 223],
+            [1.4, 218],
+            [1.5, 214],
+            [1.6, 207],
+            [1.7, 202],
+            [1.8, 198],
+            [1.9, 196],
+            [2.0, 197],
+            [2.1, 200],
+            [2.2, 205],
+            [2.3, 206],
+            [2.4, 210],
+            [2.5, 210],
+            [2.6, 210],
+            [2.7, 209],
+            [2.8, 208],
+            [2.9, 207],
+            [3.0, 209],
+            [3.1, 208],
+            [3.2, 207],
+            [3.3, 207],
+            [3.4, 206],
+            [3.5, 206],
+            [3.6, 205],
+            [3.7, 201],
+            [3.8, 195],
+            [3.9, 191],
+            [4.0, 191],
+            [4.1, 195],
+            [4.2, 199],
+            [4.3, 203],
+            [4.4, 208],
+            [4.5, 208],
+            [4.6, 208],
+            [4.7, 208],
+            [4.8, 209],
+            [4.9, 207],
+            [5.0, 207],
+            [5.1, 208],
+            [5.2, 209],
+            [5.3, 208],
+            [5.4, 210],
+            [5.5, 209],
+            [5.6, 209],
+            [5.7, 206],
+            [5.8, 207],
+            [5.9, 209],
+            [6.0, 211],
+            [6.1, 206],
+            [6.2, 201],
+            [6.3, 199],
+            [6.4, 200],
+            [6.5, 202],
+            [6.6, 203],
+            [6.7, 202],
+            [6.8, 204],
+            [6.9, 206],
+            [7.0, 208],
+            [7.1, 205],
+            [7.2, 202],
+            [7.3, 198],
+            [7.4, 198],
+            [7.5, 198],
+            [7.6, 198],
+            [7.7, 198],
+            [7.8, 199],
+            [7.9, 197],
+            [8.0, 194],
+            [8.1, 194],
+            [8.2, 195],
+            [8.3, 195],
+            [8.4, 196],
+            [8.5, 192],
+            [8.6, 200],
+            [8.7, 197],
+            [8.8, 194],
+            [8.9, 194],
+            [9.0, 193],
+            [9.1, 192],
+            [9.2, 192],
+            [9.3, 193],
+            [9.4, 191],
+            [9.5, 191],
+            [9.6, 193],
+            [9.7, 193],
+            [9.8, 194],
+            [9.9, 192]
+
+        ];
+
+        // Now create the chart
+        Highcharts.chart('annotations_chart', {
+
+            chart: {
+                type: 'area',
+                zoomType: 'x',
+                panning: true,
+                panKey: 'shift',
+                scrollablePlotArea: {
+                    minWidth: 600
+                }
+            },
+
+            annotations: [{
+                labelOptions: {
+                    backgroundColor: 'rgba(255,255,255,0.5)',
+                    verticalAlign: 'top',
+                    y: 15
+                },
+                labels: [{
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 27.98,
+                        y: 255
+                    },
+                    text: 'Arbois'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 45.5,
+                        y: 611
+                    },
+                    text: 'Montrond'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 63,
+                        y: 651
+                    },
+                    text: 'Mont-sur-Monnet'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 84,
+                        y: 789
+                    },
+                    x: -10,
+                    text: 'Bonlieu'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 129.5,
+                        y: 382
+                    },
+                    text: 'Chassal'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 159,
+                        y: 443
+                    },
+                    text: 'Saint-Claude'
+                }]
+            }, {
+                labelOptions: {
+                    shape: 'connector',
+                    align: 'right',
+                    justify: false,
+                    crop: true,
+                    style: {
+                        fontSize: '0.8em',
+                        textOutline: '1px white'
+                    }
+                },
+                labels: [{
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 96.2,
+                        y: 783
+                    },
+                    text: '6.1 km climb<br>4.6% on avg.'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 134.5,
+                        y: 540
+                    },
+                    text: '7.6 km climb<br>5.2% on avg.'
+                }, {
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 172.2,
+                        y: 925
+                    },
+                    text: '11.7 km climb<br>6.4% on avg.'
+                }]
+            }],
+
+            xAxis: {
+                labels: {
+                    format: '{value} km'
+                },
+                minRange: 5,
+                title: {
+                    text: 'Distance'
+                }
+            },
+
+            yAxis: {
+                startOnTick: true,
+                endOnTick: false,
+                maxPadding: 0.35,
+                title: {
+                    text: null
+                },
+                labels: {
+                    format: '{value} m'
+                }
+            },
+
+            tooltip: {
+                headerFormat: 'Distance: {point.x:.1f} km<br>',
+                pointFormat: '{point.y} m a. s. l.',
+                shared: true
+            },
+
+            legend: {
+                enabled: false
+            },
+
+            series: [{
+                data: elevationData,
+                lineColor: Highcharts.getOptions().colors[1],
+                color: Highcharts.getOptions().colors[2],
+                fillOpacity: 0.5,
+                name: 'Elevation',
+                marker: {
+                    enabled: false
+                },
+                threshold: null
+            }]
+
+        });
+    </script>
+
+    <!-- Line Chart 2 -->
+    <script type="text/javascript">
+
+        Highcharts.chart('line_chart2', {
+            chart: {
+                type: 'spline'
+            },
+
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value + '°';
+                    }
+                }
+            },
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            plotOptions: {
+                spline: {
+                    marker: {
+                        radius: 4,
+                        lineColor: '#666666',
+                        lineWidth: 1
+                    }
+                }
+            },
+            series: [{
+                name: 'Tokyo',
+                marker: {
+                    symbol: 'square'
+                },
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+                    y: 26.5,
+                    marker: {
+                        symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
+                    }
+                }, 23.3, 18.3, 13.9, 9.6]
+
+            }, {
+                name: 'London',
+                marker: {
+                    symbol: 'diamond'
+                },
+                data: [{
+                    y: 3.9,
+                    marker: {
+                        symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+                    }
+                }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+    </script>
+
+    <!-- Column Chart -->
+    <script type="text/javascript">
+        Highcharts.chart('column_chart', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Efficiency Optimization by Branch'
+            },
+            xAxis: {
+                categories: [
+                    'Seattle HQ',
+                    'San Francisco',
+                    'Tokyo'
+                ]
+            },
+            yAxis: [{
+                min: 0,
+                title: {
+                    text: 'Employees'
+                }
+            }, {
+                title: {
+                    text: 'Profit (millions)'
+                },
+                opposite: true
+            }],
+            legend: {
+                shadow: false
+            },
+            tooltip: {
+                shared: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    shadow: false,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Employees',
+                color: 'rgba(165,170,217,1)',
+                data: [150, 73, 20],
+                pointPadding: 0.3,
+                pointPlacement: -0.2
+            }, {
+                name: 'Employees Optimized',
+                color: 'rgba(126,86,134,.9)',
+                data: [140, 90, 40],
+                pointPadding: 0.4,
+                pointPlacement: -0.2
+            }
+            ]
+        });
+    </script>
+    <!-- column_chart2 -->
+    <script>
+        Highcharts.chart('column_chart2', {
+
+            chart: {
+                type: 'column'
+            },
+            xAxis: {
+                categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            },
+
+            yAxis: {
+                allowDecimals: false,
+                min: 0,
+                title: {
+                    text: 'Number of fruits'
+                }
+            },
+
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.x + '</b><br/>' +
+                        this.series.name + ': ' + this.y + '<br/>' +
+                        'Total: ' + this.point.stackTotal;
+                }
+            },
+
+            plotOptions: {
+                column: {
+                    stacking: 'normal'
+                }
+            },
+
+            series: [{
+                name: 'John',
+                data: [5, 3, 4, 7, 2],
+                stack: 'male'
+            }, {
+                name: 'Joe',
+                data: [3, 4, 4, 2, 5],
+                stack: 'male'
+            }, {
+                name: 'Jane',
+                data: [2, 5, 6, 2, 1],
+                stack: 'female'
+            }, {
+                name: 'Janet',
+                data: [3, 0, 4, 4, 3],
+                stack: 'female'
+            }]
+        });
+    </script>
+
+    <!-- Line Chart 3 -->
+    <script type="text/javascript">
+
+        Highcharts.chart('line_chart3', {
+
+            title: {
+                text: 'Logarithmic axis demo'
+            },
+
+            xAxis: {
+                tickInterval: 1,
+                type: 'logarithmic'
+            },
+
+            yAxis: {
+                type: 'logarithmic',
+                minorTickInterval: 0.1
+            },
+
+            tooltip: {
+                headerFormat: '<b>{series.name}</b><br />',
+                pointFormat: 'x = {point.x}, y = {point.y}'
+            },
+
+            series: [{
+                data: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512],
+                pointStart: 1
+            }]
+        });
+    </script>
+    <!-- Column Chart 3 -->
+    <script>
+        var options = {
+            chart: {
+                height: 300,
+                type: 'line',
+                stacked: false
+            },
+            dataLabels: {
+                enabled: false
+            },
+            series: [{
+                name: 'Income',
+                type: 'column',
+                data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6]
+            }, {
+                name: 'Cashflow',
+                type: 'column',
+                data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5]
+            }
+            ],
+            stroke: {
+                width: [1, 1, 4]
+            },
+            xaxis: {
+                categories: [2009, 2010, 2011, 2012, 2013],
+            },
+            yaxis: [
+                {
+                    axisTicks: {
+                        show: true,
+                    },
+                    axisBorder: {
+                        show: true,
+                        color: '#008FFB'
+                    },
+                    labels: {
+                        style: {
+                            color: '#008FFB',
+                        }
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                },
+
+                {
+                    seriesName: 'Income',
+                    opposite: true,
+                    axisTicks: {
+                        show: true,
+                    },
+                    axisBorder: {
+                        show: true,
+                        color: '#00E396'
+                    },
+                    labels: {
+                        style: {
+                            color: '#00E396',
+                        }
+                    },
+                },
+            ],
+            tooltip: {
+                fixed: {
+                    enabled: true,
+                    position: 'topLeft', // topRight, topLeft, bottomRight, bottomLeft
+                    offsetY: 30,
+                    offsetX: 60
+                },
+            },
+            legend: {
+                horizontalAlign: 'left',
+                offsetX: 40
+            }
+        }
+
+        var chart = new ApexCharts(
+            document.querySelector("#column_chart3"),
+            options
+        );
+
+
+        chart.render();
+    </script>
+    <!-- Pie Chart 2 -->
+    <script type="text/javascript">
+        // Build the chart
+        Highcharts.chart('pie_chart2', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: false,
+                data: [{
+                    name: 'Chrome',
+                    y: 20,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Internet Explorer',
+                    y: 80
+                }]
+            }]
+        });
+    </script>
+    <!-- Radial Chart -->
+    <script>
+        var options = {
+            chart: {
+                height: 300,
+                type: 'radialBar',
+            },
+            plotOptions: {
+                radialBar: {
+                    hollow: {
+                        size: '70%',
+                    }
+                },
+            },
+            series: [70],
+            labels: ['Cricket'],
+
+        }
+
+        var chart = new ApexCharts(
+            document.querySelector("#circle_chart"),
+            options
+        );
+
+        chart.render();
+    </script>
+
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    filters: [
+                        "Bungalow",
+                        "Chalet",
+                        "Guesthouse",
+                        "Hotel",
+                        "Townhouse",
+                        "Apartment",
+                        "Boutique hotel",
+                        "Cabin",
+                        "Guest suite",
+                        "Hostel",
+                        "Loft",
+                        "Villa"
+                    ],
+                    search: "",
+                    checkedFilters: [],
+                    allSelected: false,
+                    selectAllText: 'Select All',
+                    activeTrigger: false,
+                    dropdown: false,
+                    showLoader: false
+                };
+            },
+            computed: {
+                filteredList() {
+                    return this.filters.filter(item => {
+                        return item.toLowerCase().includes(this.search.toLowerCase());
+                    });
+                }
+            },
+            methods: {
+                selectAll: function () {
+                    this.checkedFilters = [];
+                    this.selectAllText = this.selectAllText == "Select All" ? 'Clear All' : 'Select All';
+                    if (this.allSelected) {
+                        for (filter in this.filters) {
+                            this.checkedFilters.push(this.filters[filter].toString());
+                        }
+                    }
+                },
+                showDropdown: function () {
+                    if (this.dropdown == false) {
+                        this.dropdown = true;
+                        this.activeTrigger = true;
+                        TweenMax.fromTo(
+                            "#dropdown",
+                            0.55,
+                            {
+                                autoAlpha: 0,
+                                y: -10
+                            },
+                            {
+                                autoAlpha: 1,
+                                y: 0,
+                                ease: Power2.easeOut
+                            }
+                        );
+                    } else {
+                        this.dropdown = false;
+                        this.activeTrigger = false;
+                        TweenMax.to(
+                            "#dropdown",
+                            0.2,
+                            {
+                                autoAlpha: 0,
+                                y: -10,
+                                ease: Power2.easeOut
+                            });
+                    }
+
+                }
+            },
+            created: function () {
+                const customScroll = new SimpleBar(document.getElementById('customScroll'));
+            }
+        });
+    </script>
+
+
+    <script>
+        const app2 = new Vue({
+            el: "#app2",
+            data() {
+                return {
+                    filters: [
+                        "Bungalow",
+                        "Chalet",
+                        "Guesthouse",
+                        "Hotel",
+                        "Townhouse",
+                        "Apartment",
+                        "Boutique hotel",
+                        "Cabin",
+                        "Guest suite",
+                        "Hostel",
+                        "Loft",
+                        "Villa"
+                    ],
+                    search: "",
+                    checkedFilters: [],
+                    allSelected: false,
+                    selectAllText: 'Select All',
+                    activeTrigger: false,
+                    dropdown: false,
+                    showLoader: false
+                };
+            },
+            computed: {
+                filteredList() {
+                    return this.filters.filter(item => {
+                        return item.toLowerCase().includes(this.search.toLowerCase());
+                    });
+                }
+            },
+            methods: {
+                selectAll: function () {
+                    this.checkedFilters = [];
+                    this.selectAllText = this.selectAllText == "Select All" ? 'Clear All' : 'Select All';
+                    if (this.allSelected) {
+                        for (filter in this.filters) {
+                            this.checkedFilters.push(this.filters[filter].toString());
+                        }
+                    }
+                },
+                showDropdown: function () {
+                    if (this.dropdown == false) {
+                        this.dropdown = true;
+                        this.activeTrigger = true;
+                        TweenMax.fromTo(
+                            "#dropdown2",
+                            0.55,
+                            {
+                                autoAlpha: 0,
+                                y: -10
+                            },
+                            {
+                                autoAlpha: 1,
+                                y: 0,
+                                ease: Power2.easeOut
+                            }
+                        );
+                    } else {
+                        this.dropdown = false;
+                        this.activeTrigger = false;
+                        TweenMax.to(
+                            "#dropdown2",
+                            0.2,
+                            {
+                                autoAlpha: 0,
+                                y: -10,
+                                ease: Power2.easeOut
+                            });
+                    }
+
+                }
+            },
+            created: function () {
+                const customScroll = new SimpleBar(document.getElementById('customScroll2'));
+            }
+        });
+    </script>
+
+    <script>
+        const app3 = new Vue({
+            el: "#app3",
+            data() {
+                return {
+                    filters: [
+                        "Bungalow",
+                        "Chalet",
+                        "Guesthouse",
+                        "Hotel",
+                        "Townhouse",
+                        "Apartment",
+                        "Boutique hotel",
+                        "Cabin",
+                        "Guest suite",
+                        "Hostel",
+                        "Loft",
+                        "Villa"
+                    ],
+                    search: "",
+                    checkedFilters: [],
+                    allSelected: false,
+                    selectAllText: 'Select All',
+                    activeTrigger: false,
+                    dropdown: false,
+                    showLoader: false
+                };
+            },
+            computed: {
+                filteredList() {
+                    return this.filters.filter(item => {
+                        return item.toLowerCase().includes(this.search.toLowerCase());
+                    });
+                }
+            },
+            methods: {
+                selectAll: function () {
+                    this.checkedFilters = [];
+                    this.selectAllText = this.selectAllText == "Select All" ? 'Clear All' : 'Select All';
+                    if (this.allSelected) {
+                        for (filter in this.filters) {
+                            this.checkedFilters.push(this.filters[filter].toString());
+                        }
+                    }
+                },
+                showDropdown: function () {
+                    if (this.dropdown == false) {
+                        this.dropdown = true;
+                        this.activeTrigger = true;
+                        TweenMax.fromTo(
+                            "#dropdown3",
+                            0.55,
+                            {
+                                autoAlpha: 0,
+                                y: -10
+                            },
+                            {
+                                autoAlpha: 1,
+                                y: 0,
+                                ease: Power2.easeOut
+                            }
+                        );
+                    } else {
+                        this.dropdown = false;
+                        this.activeTrigger = false;
+                        TweenMax.to(
+                            "#dropdown3",
+                            0.2,
+                            {
+                                autoAlpha: 0,
+                                y: -10,
+                                ease: Power2.easeOut
+                            });
+                    }
+
+                }
+            },
+            created: function () {
+                const customScroll = new SimpleBar(document.getElementById('customScroll3'));
+            }
+        });
+    </script>
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.i-checks').iCheck({
+
+                checkboxClass: 'icheckbox_square-green',
+
+                radioClass: 'iradio_square-green',
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

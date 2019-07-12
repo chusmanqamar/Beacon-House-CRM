@@ -1,0 +1,62 @@
+p, ul{
+  margin: 0;
+}
+a{
+  text-decoration: none !important;
+}
+h1, h2, h3 ,h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+/*****************SideBar*******************/
+.sidebarBack{
+  background: #fafafa;
+}
+.sidebarBack h3{
+  font-size: 18px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+.sidebarBack p{
+  font-size: 13px;
+}
+.sidebarList p,span{
+  text-transform: uppercase;
+}
+.sidebarList{
+  background: #ededed;
+  padding: 14px 0;
+}
+.sidebarList p{
+  color: #7d7373;
+  font-weight: bold;
+}
+.sidebarList span{
+  font-size: 14px;
+}
+.randomLinks ul li a{
+  color: black;
+  padding: 3px 0;
+  display: block;
+  font-size: 15px;
+}
+.mainContent .box{
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+.mainContent .box.green{
+  background: #10cfbd;
+}
+.mainContent .box.blue{
+  background: #48b0f7;
+}
+.mainContent .box.grey{
+  background: #e7e7e7;
+}
+.mainContent .box.black{
+  background: #333333;
+}
+.sidebarList ul li{
+  padding: 0 13px;
+}

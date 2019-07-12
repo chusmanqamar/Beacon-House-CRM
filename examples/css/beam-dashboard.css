@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+
+body {
+  font-family: "Roboto", sans-serif;
+  float: left;
+  width: 100%;
+}
+p{
+  font-size: 13px;
+  margin: 0;
+  color: #5656d0;
+}
+b{
+  font-size: 13px;
+  color: #5656d0;
+}
+a{
+  font-size: 13px;
+}
+.community-wall img{
+  margin: 0 auto;
+}
+.communication-center span{
+  display: block;
+    font-size: 32px;
+    text-align: center;
+}
+.beam-dash .ibox-title{
+  background: #d8d8d8a3;
+}
+.beam-dash .ibox.collapsed .ibox-content{
+  border: 1px solid #d8d8d8a3;
+}
+.beam-dash .dropdown-item{
+  padding: 5px 9px !important;
+}
+.beam-dash .beam-btn{
+  background: #d8d8d8a3;
+    border: none;
+    color: black;
+}
+.sidebar-title {
+  background: #e6e6e6;
+    padding: 11px 14px;
+}
+.sidebar-content{
+  padding: 10px 13px;
+    border: 1px solid #e6e6e6;
+}

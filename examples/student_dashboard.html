@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/student-dashboard.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+
+            <div class="sidebar-collapse">
+
+                <ul class="nav metismenu" id="side-menu">
+
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element">
+
+                            <img alt="image" class="rounded-circle" src="img/profile_small.jpg" />
+
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                                <span class="block m-t-xs font-bold">Emp 325415 </span>
+
+                                <span class="text-muted text-xs block">SG Head</span>
+                                <span class="text-muted text-xs block">200 School Group Office</span>
+
+                            </a>
+
+                            <!-- <ul class="dropdown-menu animated fadeInRight m-t-xs">
+
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+
+                            <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+
+                            <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+
+                        </ul> -->
+
+                        </div>
+
+                        <div class="logo-element">
+                            SC
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="pl-2 pr-3">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h3 class="text-white">Filter</h3>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="text-right mt-2 fiterIcon">
+                                    <i class="fas fa-filter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Student Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Student ID" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Father's Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Mother's Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Mother's Mobile" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="School" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Class" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="School Group" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Region" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+
+    </nav>
+
+
+
+    <div id="page-wrapper" class="gray-bg">
+
+        <div class="row border-bottom">
+
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
+                    </a>
+
+                    <form role="search" class="navbar-form-custom" action="search_results.html">
+
+                        <div class="form-group">
+
+                            <input type="text" placeholder="Search for something..." class="form-control"
+                                name="top-search" id="top-search">
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <ul class="nav navbar-top-links navbar-right">
+
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">Welcome to Student Care Dashboard.</span>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                    </a>
+                                    <div>
+                                        <small class="float-right">46h ago</small>
+                                        <strong>Mike Loreipsum</strong> started following <strong>Monica
+                                            Smith</strong>. <br>
+                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li>
+
+                                <div class="dropdown-messages-box">
+
+                                    <a class="dropdown-item float-left" href="profile.html">
+
+                                        <img alt="image" class="rounded-circle" src="img/a4.jpg">
+
+                                    </a>
+
+                                    <div>
+
+                                        <small class="float-right text-navy">5h ago</small>
+
+                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
+                                            Smith</strong>. <br>
+
+                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li>
+
+                                <div class="dropdown-messages-box">
+
+                                    <a class="dropdown-item float-left" href="profile.html">
+
+                                        <img alt="image" class="rounded-circle" src="img/profile.jpg">
+
+                                    </a>
+
+                                    <div>
+
+                                        <small class="float-right">23h ago</small>
+
+                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+
+                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li>
+
+                                <div class="text-center link-block">
+
+                                    <a href="mailbox.html" class="dropdown-item">
+
+                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+
+                                    </a>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="dropdown">
+
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+
+                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-alerts">
+
+                            <li>
+
+                                <a href="mailbox.html" class="dropdown-item">
+
+                                    <div>
+
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li>
+
+                                <a href="profile.html" class="dropdown-item">
+
+                                    <div>
+
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+
+                                        <span class="float-right text-muted small">12 minutes ago</span>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li>
+
+                                <a href="grid_options.html" class="dropdown-item">
+
+                                    <div>
+
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+
+                                    </div>
+
+                                </a>
+
+                            </li>
+
+                            <li class="dropdown-divider"></li>
+
+                            <li>
+
+                                <div class="text-center link-block">
+
+                                    <a href="notifications.html" class="dropdown-item">
+
+                                        <strong>See All Alerts</strong>
+
+                                        <i class="fa fa-angle-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- <li>
+
+                        <a href="login.html">
+
+                            <i class="fa fa-sign-out"></i> Log out
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a class="right-sidebar-toggle">
+
+                            <i class="fa fa-tasks"></i>
+
+                        </a>
+
+                    </li> -->
+
+                </ul>
+
+
+
+            </nav>
+
+        </div>
+        <!-- Dashboad Start -->
+        <div class="wrapper wrapper-content">
+
+            <div class="row">
+                <!-- Academic Information Start -->
+                <div class="col-lg-6">
+
+                    <div class="ibox ">
+
+                        <div class="ibox-title titleBack">
+
+                            <h5>Academic Information</h5>
+
+                        </div>
+
+                        <div class="ibox-content">
+
+                            <div class="dropdown profile-element">
+                                <img alt="image" class="rounded-circle" src="img/profile_small.jpg">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    <span class="block m-t-xs font-bold">Ahsan Ahmed</span>
+                                    <span class="text-muted text-xs block">Beacon House, Anywhere Four - Green</span>
+                                    <span class="text-muted text-xs block">Class Teacher: Abeer Muhammad</span>
+                                    <span class="text-muted text-xs block">School Head: Fatima Javed</span>
+                                </a>
+                            </div>
+                            <div class="row stu-dashboard mt-3">
+                                <div class="col p-0">
+                                    <div class="text-center smsBack">
+                                        <span><i class="far fa-envelope"></i></span>
+                                        <h3>SMS</h3>
+                                    </div>
+                                </div>
+                                <div class="col p-0">
+                                    <div class="text-center addressBack">
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <h3>Address and Map</h3>
+                                    </div>
+                                </div>
+                                <div class="col p-0">
+                                    <div class="text-center statisticsBack">
+                                        <span><i class="fas fa-heartbeat"></i></span>
+                                        <h3>Virtual Statistics</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row stu-dashboard">
+                                <div class="col p-0">
+                                    <div class="text-center sibBack">
+                                        <span><i class="fas fa-user-friends"></i></span>
+                                        <h3>Sibling Information</h3>
+                                    </div>
+                                </div>
+                                <div class="col p-0">
+                                    <div class="text-center parentBack">
+                                        <span><i class="fas fa-user"></i></span>
+                                        <h3>Parent / Guardian Contacts</h3>
+                                    </div>
+                                </div>
+                                <div class="col p-0">
+                                    <div class="text-center mobileBack">
+                                        <span><i class="fas fa-mobile-alt"></i></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
+
+                            <small>Total income</small> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Academic Information end -->
+                <!-- Attendance History Start -->
+                <div class="col-lg-6">
+
+                    <div class="ibox">
+
+                        <div class="ibox-title titleBack">
+
+                            <h5>Attendance History</h5>
+
+                        </div>
+
+                        <div class="ibox-content attend-minHight">
+                            <canvas id="doughnutChart"></canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Attendance History end -->
+            </div>
+            <div class="row">
+                <!-- Fee History Start -->
+                <div class="col-lg-6">
+
+                    <div class="ibox ">
+
+                        <div class="ibox-title titleBack">
+
+                            <h5>Fee History</h5>
+
+                        </div>
+
+                        <div class="ibox-content fee-minHight">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fee History end -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <!-- Withdrawal History Start -->
+                        <div class="col-lg-6">
+
+                            <div class="ibox ">
+
+                                <div class="ibox-title titleBack">
+
+                                    <h5>Withdrawal History</h5>
+
+                                </div>
+
+                                <div class="ibox-content stuWithdrawal">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                            <div class="text-center withHead">
+                                                <h3>5</h3>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                            <div class="text-center">
+                                                <a href="">View History <span><i
+                                                            class="fas fa-clipboard-list"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Withdrawal History end -->
+                        <!-- Transfer History Start -->
+                        <div class="col-lg-6">
+                            <div class="ibox ">
+                                <div class="ibox-title titleBack">
+                                    <h5>Transfer History</h5>
+                                </div>
+                                <div class="ibox-content stuWithdrawal">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                            <div class="text-center withHead">
+                                                <h3>2</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                            <div class="text-center">
+                                                <a href="">View History <span><i
+                                                            class="fas fa-clipboard-list"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Transfer History end -->
+                    </div>
+                    <div class="row">
+                        <!-- Exemption History Start -->
+                        <div class="col-lg-6">
+                            <div class="ibox ">
+                                <div class="ibox-title titleBack">
+                                    <h5>Exemption History</h5>
+                                </div>
+                                <div class="ibox-content stuWithdrawal">
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                            <div class="text-center withHead">
+                                                <h3>6</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                            <div class="text-center">
+                                                <a href="">View History <span><i
+                                                            class="fas fa-clipboard-list"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Exemption History end -->
+                        <!-- Security Refund Start -->
+                        <div class="col-lg-6">
+                            <div class="ibox ">
+                                <div class="ibox-title titleBack">
+                                    <h5>Security Refund</h5>
+                                </div>
+                                <div class="ibox-content stuWithdrawal securityR">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="text-center withHead">
+                                                <h3>22,000<small>rs</small></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Security Refund end -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Complaint ID Start -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="ibox ">
+                        <div class="ibox-title titleBack">
+                            <h5>Complaint ID</h5>
+                        </div>
+                        <div class="ibox-content  stuWithdrawal boxMinhight">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                    <div class="text-center withHead">
+                                        <h3>4</h3>
+                                        <h4>Request ID</h4>
+                                        <p>125412</p>
+                                        <h4>Request ID</h4>
+                                        <p>125412</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="text-center complaintId">
+                                        <a href="">View History <span><i class="fas fa-clipboard-list"></i></span></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Complaint ID end -->
+                <div class="col-lg-4 col-md-4">
+                    <div class="ibox ">
+                        <div class="ibox-title titleBack">
+                            <h5>Gradebook History</h5>
+                        </div>
+                        <div class="ibox-content stuWithdrawal boxMinhight">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                    <div class="text-center">
+                                        <h3>Mid Term Report</h3>
+                                        <h4>2017 / 2018 </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="text-center complaintId">
+                                        <a href="">View History <span><i class="fas fa-clipboard-list"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="ibox ">
+                        <div class="ibox-title titleBack">
+                            <h5>Scholarship Detail</h5>
+                        </div>
+                        <div class="ibox-content stuWithdrawal boxMinhight">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                    <ul class="timeline">
+                                        <li class="greenTimeline">
+                                            <a target="_blank" href="">2019</a>
+                                            <p>25%</p>
+                                        </li>
+                                        <li class="blueTimeline">
+                                            <a target="_blank" href="">2018</a>
+                                            <p></p>
+                                        </li>
+                                        <li class="yellowTimeline">
+                                            <a target="_blank" href="">2017</a>
+                                            <p></p>
+                                        </li>
+                                        <li class="greenTimeline">
+                                            <a target="_blank" href="">2016</a>
+                                            <p></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="text-center complaintId">
+                                        <a href="">View History <span><i class="fas fa-clipboard-list"></i></span></a>
+                                    </div>
+                                    <div class="timeLineBox">
+                                        <ul class="list-unstyled">
+                                            <li><span class="green-box"></span>Merits</li>
+                                            <li><span class="yellow-box"></span>Means</li>
+                                            <li><span class="blue-box"></span>Co-curricular</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="float-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2018
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Mainly scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+    <script src="js/demo/chartjs-demo.js"></script>
+    <!-- Doughnut Chart JS -->
+    <script>
+        var ctxD = document.getElementById("doughnutChart").getContext('2d');
+        var myLineChart = new Chart(ctxD, {
+            type: 'doughnut',
+            data: {
+                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                datasets: [{
+                    data: [300, 50, 100, 40, 120],
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+    </script>
+    <!-- Pie Chart JS -->
+    <script>
+        var ctxP = document.getElementById("pieChart").getContext('2d');
+        var myPieChart = new Chart(ctxP, {
+            type: 'pie',
+            data: {
+                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+                datasets: [{
+                    data: [300, 50, 100, 40, 120],
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trello Layout</title>
+  
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="css/trello.css">
+
+  <!-- lsit  color -->
+<style>
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div class="ui">
+	<nav class="navbar app">App bar</nav>
+	<nav class="navbar board">Board bar</nav>
+	<div class="lists">
+		<div class="list">
+			<header>Header <button style="float: right; height: 30px;" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+    ...
+  </button></header>
+			<ul>
+				<li>Lorem ipsum dolor sit amet</li>
+
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
+			</ul>
+			<footer>Add a card...</footer>
+		</div>
+		<div class="list">
+			<header>Header <button style="float: right; height: 30px;" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+    ...
+  </button></header>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
+				<li>
+					<img src="holder.js/300x150?auto=yes&bg=#ccc" alt="">
+					Lorem ipsum dolor sit amet
+				</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
+				<li>Lorem ipsum dolor sit amet</li>
+			</ul>
+			<footer>Add a card...</footer>
+		</div>
+		<div class="list">
+			<header>Header <button style="float: right; height: 30px;" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+    ...
+  </button></header>
+			<ul>
+				<li>Just some text</li>
+				<li>Just some text</li>
+			</ul>
+			<footer>Add a card...</footer>
+		</div>
+	</div>
+</div>
+
+ <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">List Actions</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <div>
+      <div>
+         <ul class="pop-over-list">
+            <li><a class="js-add-card" href="#">Add Card…</a></li>
+            <li><a class="js-copy-list" href="#">Copy List…</a></li>
+            <li><a class="js-move-list" href="#">Move List…</a></li>
+            <li><a class="highlight-icon js-list-subscribe" href="#">Watch </a></li>
+         </ul>
+         <hr>
+         <ul class="pop-over-list">
+            <li><a class="js-sort-cards" href="#">Sort By…</a></li>
+         </ul>
+         <hr>
+         <ul class="pop-over-list">
+            <li><a class="js-move-cards" href="#">Move All Cards in This List…</a></li>
+            <li><a class="js-archive-cards" href="#">Archive All Cards in This List…</a></li>
+         </ul>
+         <hr>
+         <ul class="pop-over-list">
+            <li><a class="js-close-list" href="#">Archive This List</a></li>
+         </ul>
+      </div>
+   </div>
+        </div>
+        
+        <!-- Modal footer -->
+       <!--  <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js'></script>
+
+  
+
+</body>
+
+</html>
