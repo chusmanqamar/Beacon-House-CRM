@@ -7,6 +7,8 @@
     <title>Beams | Dashboard</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/chartist/chartist.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/beam-dashboard-new.css">
 </head>
 
@@ -14,11 +16,11 @@
     <div class="main">
         <div class="container-fluid pl-0">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="sidebarBack">
                         <div class="text-center">
-                            <img src="img/user-image.jpg" class="img-fluid mt-4" alt="" width="100px">
-                            <h3>Qasim Ali Khan</h3>
+                            <img src="img/user-image.jpg" class="img-fluid mt-4 rounded" alt="" width="100px">
+                            <h3>Qasim Ali Khan <a href="#" class="profileEdit"><i class="fa fa-pencil"></i></a></h3>
                             <p>Deputy Manager Software Development</p>
                             <p>IT Department</p>
                             <p>Head Office Lahore</p>
@@ -35,60 +37,184 @@
                                     <span>Status</span>
                                 </li>
                                 <li class="list-inline-item">
-                                    <p>09:02:45</p>
-                                    <span>Present</span>
+                                    <p>12 Years</p>
+                                    <span>Service</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="randomLinks ml-4 mt-4">
-                            <ul class="list-unstyled">
-                                <li><a href="#">My Dashboard</a></li>
-                                <li><a href="#">My Objectives & Development</a></li>
-                                <li><a href="#">Self Insurance</a></li>
-                                <li><a href="#">Employee Details</a></li>
-                                <li><a href="#">Verified Employee Details</a></li>
+                        <div class="randomLinks mt-4">
+                            <ul class="list-unstyled sidebarLinks">
+                                <li><a href="#" class="button"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span> Dashboard</a></li>
+                                <li><a href="#" class="button"><span><i class="fa fa-list" aria-hidden="true"></i></span> My Objectives & Development</a></li>
+                                <li><a href="#" class="button"><span><i class="fa fa-lock" aria-hidden="true"></i></span> Self Insurance</a></li>
+                                <li><a href="#" class="button"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> Employee Details</a></li>
+                                <li><a href="#" class="button"><span><i class="fa fa-check" aria-hidden="true"></i></span> Verified Employee Details</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="mainContent mt-2">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="mainContent mt-4">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="box green">
-
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="box green serviceDesk">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="info-box">
+                                                <span class="info-box-icon bg-aqua"><i class="fa fa-laptop"></i></span>
+                                                <div class="info-box-content">
+                                                    <span class="info-box-text">Information Technology</span>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><a href="">New Request</a></li>
+                                                        <li class="list-inline-item"> | </li>
+                                                        <li class="list-inline-item"><a href="">My Request</a></li>
+                                                    </ul>
+                                                   
+                                                </div>
+                                                <!-- /.info-box-content -->
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="info-box-icon bg-green"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+                                                <div class="info-box-content">
+                                                    <span class="info-box-text">Human Resources</span>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><a href="">New Request</a></li>
+                                                        <li class="list-inline-item"> | </li>
+                                                        <li class="list-inline-item"><a href="">My Request</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.info-box-content -->
+                                            </div>
+                                            <div class="info-box">
+                                                <span class="info-box-icon bg-yellow"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                                                <div class="info-box-content">
+                                                    <span class="info-box-text">Administration</span>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><a href="">New Request</a></li>
+                                                        <li class="list-inline-item"> | </li>
+                                                        <li class="list-inline-item"><a href="">My Request</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.info-box-content -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Service desk</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="box blue">
-
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="box grey">
+                                    <div class="leavesCounter">
+                                        <div id="ct-chart5" class="ct-perfect-fourth"></div>
+                                        <ul class="list-inline text-center mt-2 consumedAndLeft">
+                                            <li class="list-inline-item">
+                                                <h3>15 left</h3>
+                                                <h5>casual</h5>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <h3>30 left</h3>
+                                                <h5>annual</h5>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <h3>12 left</h3>
+                                                <h5>sick</h5>
+                                            </li>
+                                        </ul>
 
+                                        <ul class="text-center mt-2 applyLeaves">
+                                            <li class="applyLeave">
+                                                <a href="#" class="button">Apply Leave</a>
+                                            </li>
+                                            <li class="leaveStatus">
+                                                <a href="#" class="button">Leave Status</a>
+                                            </li>
+                                            <li class="ciewCalender">
+                                                <a href="#" class="button">View Calender</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="box blue communityWall">
+                                    <ul class="list-inline text-right">
+                                        <li class="list-inline-item">
+                                            <a href=""><i class="fa fa-commenting-o" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href=""><i class="fa fa-heart-o"></i></a>
+                                        </li>
+                                    </ul>
+                                    <span>21 Jan</span>
+                                    <h3>carefully designed for a great <b>experience</b></h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-4">
+                        <div class="row mt-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="box black">
                                     
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="box green">
 
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="box blue">
 
                                 </div>
                             </div>
                         </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="box black">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="box green">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="box blue">
+
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <div class="rightSideBar text-center ">
+                        <ul class="list-unstyled">
+                            <li><a href="#bottom" id="top"><i class="fa fa-angle-double-down"></i></a></li>
+                            <li><a href=""><img src="img/circular-speech-bubble-with-three-dots-inside.png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href=""><img src="img/mail.png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href=""><img src="img/group.png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href=""><img src="img/book-(1).png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href=""><img src="img/network.png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href=""><img src="img/circular-speech-bubble-with-three-dots-inside.png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href=""><img src="img/mail.png" class="img-fluid" alt="" width="40px;"></a></li>
+                            <li><a href="#top" id="bottom"><i class="fa fa-angle-double-up"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%200">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%201">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%202">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%203">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%204">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%205">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%206">
+                        <img class="item" src="http://placehold.it/320x240?text=Slide%207">
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -101,5 +227,55 @@
     <script src="js/inspinia.js"></script>
     <!-- jQuery UI -->
     <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Chartist -->
+    <script src="js/plugins/chartist/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
 
+
+    <script>
+
+            $(document).ready(function(){
+    
+                // Simple pie chart
+    
+                var data = {
+    
+                    series: [5, 3, 4]
+    
+                };
+    
+                var sum = function(a, b) { return a + b };
+    
+                new Chartist.Pie('#ct-chart5', data, {
+    
+                    labelInterpolationFnc: function(value) {
+    
+                        return Math.round(value / data.series.reduce(sum) * 100) + '%';
+    
+                    }
+    
+                });
+    
+    
+            });
+    
+        </script>
+
+        <script>
+            $( document ).ready(function() {
+    
+                $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: false,
+                mouseDrag: false,
+                touchDrag: false,
+                pullDrag: false,
+                rewind: true,
+                margin: 0,
+                nav: true
+                });
+            });
+        </script>
+</body>
 </html>

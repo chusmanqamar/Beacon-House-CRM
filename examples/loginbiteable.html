@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Login Page</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/loginmain.css">
+
+</head>
+
+<body>
+
+	<div class="container-login100">
+		<div class="login100-more"></div>
+
+		<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+			<form class="login100-form validate-form">
+				<span class="login100-form-title p-b-20">
+					<img src="img/bi-and-beams.png" class="img-fluid" alt="" width="163px">
+				</span>
+				<span class="login100-form-title p-b-20 welcomeBack">
+					Welcome back!
+				</span>
+				<div class="text-center login100-form-title loginGoogle">
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href=""><span><i class="fa fa-google"></i></span>
+								<span>Login With Google</span></a></li>
+
+					</ul>
+				</div>
+
+				<div class="wrap-input100 m-t-70">
+					<!-- <span class="label-input100">Email</span> -->
+					<input type="text" name="email" placeholder="Work Email" required>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 m-b-50">
+					<!-- <span class="label-input100">Password</span> -->
+					<input type="password" name="pass" placeholder="Pasword">
+					<span class="focus-input100"></span>
+
+				</div>
+
+				<div class="text-center login100-form-title loginbtn">
+
+					<a href="#" class="login100-form-btn">
+						Login
+					</a>
+					<a href="#" class="forgotPass">Reset Password?</a>
+
+				</div>
+
+				<p style="margin-top: 50px;color: lightgrey;">By proceeding to create your account and use Biteable,
+					you are agreeing to our Terms of Use and Privacy Policy.</p>
+
+			</form>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+	<script>
+		$(document).ready(function () {
+			$(".forgotPass").click(function () {
+				$.ajax({
+					url: "loginbiteable_cnic.html", success: function (result) {
+						$(".login100-form").html(result);
+					}
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>

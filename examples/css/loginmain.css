@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Brown";
+  src: url("../fonts/brown/regular/lineto-brown-pro-regular.ttf");
+  font-weight: normal;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+  font-family: "Brown";
+}
+
+/*---------------------------------------------*/
+a {
+ font-family: "Brown";
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  text-decoration: none;
+}
+
+/* a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+} */
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+ font-family: "Brown";
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.wrap-login100 {
+  width: 450px;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  z-index: 2;
+  margin-left: 10vmin;
+  box-shadow: rgba(0,0,0,.3) 0 0 3rem;
+}
+
+/*------------------------------------------------------------------
+[ Login100 more ]*/
+.login100-more {
+  background: url('../img/biteable-back.jpg') bottom right no-repeat;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+}
+
+.login100-more::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.login100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.login100-form-title {
+  font-size: 20px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+
+}
+.welcomeBack{
+  font-size: 2em;
+  letter-spacing: 1px;
+  color: black;
+}
+.welcomeBack p a{
+  color: cornflowerblue;
+}
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 45px;
+}
+
+.label-input100 {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: #999999;
+  line-height: 1.2;
+  padding-left: 2px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
+}
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.loginGoogle a{
+  display: block;
+    background: #df4930;
+    padding: 12px 60px;
+    color: white;
+}
+
+.loginGoogle span i{
+  font-size: 17px;
+    padding-right: 9px;
+}
+.loginbtn a.login100-form-btn{
+  background: #382e77;
+  width: 117px;
+  height: 53px;
+  display: inline-block;
+  padding: 12px 0;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.loginbtn .forgotPass{
+  display: block;
+    margin-top: 19px;
+    color: #24c87585;
+}
+
+.login100-form h4{
+  border-bottom: 1px solid lightgrey;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 6px;
+  font-weight: normal;
+}
+input{
+  width: 100%;
+  height: 33px;
+}
