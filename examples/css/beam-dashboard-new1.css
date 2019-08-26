@@ -759,11 +759,13 @@ ul.sidebarLinks li a span {
   text-decoration: none;
   }
   .popup{
-  width: 100%;
-  margin: 0 auto;
-  display: none;
-  position: fixed;
-  z-index: 101;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 101;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
   }
   .cnt223{
   min-width: 450px;
@@ -775,7 +777,7 @@ ul.sidebarLinks li a span {
   z-index: 103;
   padding: 0 0 12px 0;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #b7b7b7;
+  /* box-shadow: 0 2px 5px #b7b7b7; */
   }
   .cnt223 p{
   clear: both;
